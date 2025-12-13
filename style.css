@@ -1,103 +1,90 @@
 body{
-    background-color:black;
+    background-color:#1c1d21;
     color: white;
 }
-.resume{
-    background-image:linear-gradient(black,black, indigo, purple);
-}
-.resume_content{
-    padding: 45px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+
 header{
-    background-color: indigo;
+    background-color: #4D3A81;
     text-align:center;
     color:white;
     padding:6px;
+    margin: 1%;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-nav{
-    border-radius:20px;
-}
-nav ul{
-    list-style-type: none;
-    background-color: black;
-    margin:10px;
-    padding: 10px;
-    display: flex;
-    border-radius:10px;
-    border-style: solid;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    justify-content:space-evenly;
-    font-size: x-large;
-}
-nav ul li{
-    display: inline;
-    font-size:x-large;
-}
-nav ul li a{
-    color: white;
-    padding:8px;
-    
-}
-nav ul li a:hover{
-    background-image:linear-gradient(to bottom right, purple,violet);
-    border-radius: 15px;
-}
-nav ul li a:link{
-    text-decoration: none;
+    border-radius: 20px;
 }
 
-.active{
-    background-image:linear-gradient(to bottom right, purple,violet);
-    border-radius: 15px;
-}
 
-.container{
+.flex-container{
     display: flex;
     padding: 50px;
-    background-image:linear-gradient(to bottom right,black,black,indigo, purple);
     font-size: x-large;
     justify-content: space-evenly;
     border-radius: 20px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-style:solid;
 }
-.container > div{
+.flex-container > div.bio{
     width:50%;
   }
-/* come back to the photo */
 
-.case_study{
-    background-image:linear-gradient(to bottom right,indigo, purple,violet);
-    padding:20px;
-    border-style:solid;
-    border-radius:20px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 10px;
+.flex-container > div > img{
+    object-fit: cover;
+    border-radius: 50%;
 }
-.contact_info{
-    display: flex;
-    padding: 50px;
-    background-image:linear-gradient(to bottom right,indigo, purple,violet);
+
+.grid-containerA{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1px;
+}
+.grid-containerA > section {
+    padding: 20px;
     font-size:x-large;
-    justify-content: space-between;
     border-radius:20px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-style:solid;
     margin: 10px;
+    text-align: center;
+    gap:1px;
 }
-.contact_info > div{
-    width:50%;
+.grid-containerB {
+    display :grid;
+    grid-template-columns: auto auto;
+    padding:10px;
+    margin: 1px;
+    border-radius:20px;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ .grid-containerB >div1, .grid-containerB >div2{
     border-style:solid;
     padding:10px;
     border-radius: 20px;
+    text-align: center;
+    margin:10px;
+    font-size:xx-large;
+   
 }
+
 .disclaimer{
     color: white;
     text-align: center;
     margin-top:20px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+button{
+    background-color: #9b00e8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: large;
+    margin-top: 10px;
+}
+
+button:hover{
+    background-color: #7a00b2;
 }
 a{
     color: white;
